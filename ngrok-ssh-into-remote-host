@@ -1,0 +1,10 @@
+
+https://byteshiva.medium.com/ssh-into-remote-linux-by-using-ngrok-b8c49b8dc3ca
+
+ngrok tcp 22
+
+ssh user@0.tcp.ngrok.io -p13212
+
+ngrok tcp --region=ap 22
+
+ssh user@0.tcp.ap.ngrok.io -p31376
