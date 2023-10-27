@@ -3,8 +3,8 @@ authtoken: XXXXXXXXXXXXXXXXXXXXXXXXXX
 version: 2
 log_level: info
 log_format: json
-log: /var/log/ngrok.log
-region: in
+log: /tmp/ngrok.log
+region: ap #in
 tunnels:
   first:
     addr: 8188
