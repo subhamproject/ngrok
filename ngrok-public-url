@@ -1,0 +1,4 @@
+# run ngrok in the background
+ngrok http 80 --log=stdout >/dev/null &
+# get the public url
+PUBLIC_URL=$(curl -sS http://localhost:4040/api/tunnels | jq -r '.tunnels[0].public_url')
